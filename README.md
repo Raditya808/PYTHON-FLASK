@@ -27,10 +27,8 @@ A simple and modular web application built with [Flask](https://flask.palletspro
 
 
 📁 Struktur Sederhana
-bash
-Copy
-Edit
-.
+
+```bash
 ├── app/
 │   ├── routes/
 │   ├── templates/
