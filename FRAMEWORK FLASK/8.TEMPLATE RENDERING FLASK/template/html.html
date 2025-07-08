@@ -1,0 +1,8 @@
+<!--This is a simple Flask application that renders an HTML template with a variable passed to it--> 
+<!doctype html>
+<title>Hello from Flask</title>
+{% if person %}
+  <h1>Hello {{ person }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}

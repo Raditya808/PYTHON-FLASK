@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ mode|default('Login')|capitalize }}</title>
+</head>
+<body>
+    <h2>
+        {% if mode == 'signup' %}
+            Signup Form
+        {% else %}
+            Login Form
+        {% endif %}
+    </h2>
+
+    {% if error %}
+        <p style="color:orange;">{{ error }}</p>
+    {% endif %}
+    {% if massage %}
+        <p style="color:green;">{{ massage }}</p>
+    {% endif %}
+
+    <form method="post">
+        <label>Username:</label>
+        <input type="text" name="username"><br><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br><br>
+        <button type="submit">
+            {% if mode == 'signup' %}Signup{% else %}Login{% endif %}
+        </button>
+    </form>
+
+    {% if mode == 'signup' %}
+        <p>Sudah punya akun? <a href="{{ url_for('login') }}"><button> sini </button></a></p>
+    {% else %}
+        <p>Belum punya akun? <a href="{{ url_for('signup') }}"><button> di sini </button></a></p>
+    {% endif %}
+</body>
+</html>
