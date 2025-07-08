@@ -26,7 +26,11 @@ A simple and modular web application built with [Flask](https://flask.palletspro
 # MAKA FLASK AKAN BERJALAN DI PORT 5000 DI TERMINAL
 
 
-# STRUKTUR FILE YANG SEDERHANA
+📁 Struktur Sederhana
+bash
+Copy
+Edit
+.
 ├── app/
 │   ├── routes/
 │   ├── templates/
